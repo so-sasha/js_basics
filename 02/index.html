@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Особый человек</title>
+    <style>
+      h1 {
+        max-width: 80vw;
+        font-size: 10vw;
+        font-family: sans-serif;
+      }
+      #userName {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Я люблю тебя, <span id="userName"></span>!
+    </h1>
+    <script>
+      let user = prompt('Как вас зовут?')
+      document.getElementById('userName').textContent = user
+    </script>
+  </body>
+</html>
