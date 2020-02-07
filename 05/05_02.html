@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Секретный сайт</title>
+  </head>
+  <body>
+    <h1>Введите пароль для входа на сайт</h1>
+    <p>
+      Введите пароль сюда: <input id="passInput" type="text"/>
+    </p>
+    <a href="only-allowed.html" onclick="return checkPass()">
+      Нажмите на ссылку, чтобы проверить пароль и попасть на сайт
+    </a>
+    <script>
+      function checkPass() {
+        let pass = document.getElementById("passInput").value
+        if (pass === "0000") {
+          return true
+        }
+        alert("Доступ запрещён!")
+        return false
+      }
+    </script>
+  </body>
+</html>
