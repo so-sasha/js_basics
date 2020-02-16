@@ -1,0 +1,91 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 25vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  background-color: #000;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  margin: 10px;
+
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid black;
+  border-left: 50px solid transparent;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  border-radius: 100%;
+  background-color: #000;
+}
+
+button {
+  margin: 15px 0 30px 0;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  transition: box-shadow 100ms ease-in-out;
+
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #fffdca;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+button:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+button:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.boxes {
+  position: relative;
+
+  display: flex;
+
+  width: 460px;
+
+  text-align: center;
+}
+
+.boxes .box {
+  width: 25px;
+  height: 25px;
+  margin: 1px;
+
+  background-color: red;
+}
+
+.boxes__top,
+.boxes__bot {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxes__bot {
+  position: absolute;
+
+  opacity: .3;
+}
+
+.motion .box {
+  width: 50px;
+  height: 50px;
+}
